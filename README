@@ -1,0 +1,21 @@
+
+ReadMe hw 1.08 COMS 327S 2019 
+
+The first objective was to be able to construct monster and object instances by
+creating factories for each. These instances use data parsed from desc files to populate some of the classes attributes, such as
+rarity damage etc.. Some attributes are given as instances of a dice object and with the exception of damage a roll() function
+was used to assign real values to all attributes represented as dice in the desc files. Second, objects and monsters are generated
+and placed on the map using rarity values, they are also displayed in color found in there desc files. Generated instances with
+uniq and art attributes are limited to a maximum of 1 each per generation. I also changed the rendering and monster generation
+functions as well as adding in a object class to fulfill these goals.
+
+NOTES:
+  active desc files are located in the saved_dungeons folder of the main directory
+  monsters and pc's will cover generated objects but will become visible when characters move off them. 
+  
+  
+TO RUN:
+  Open main project directory in terminal.
+  run: 	    make
+  run:     ./rlg327
+  

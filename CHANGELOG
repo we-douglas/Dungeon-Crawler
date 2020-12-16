@@ -1,0 +1,22 @@
+Change Log 1.08 COMS 327S 2019 
+
+
+
+Day 2:
+    + rlg.327.cpp		,main()				gen_monsters2() is implemented into main replacing gen_monsters()
+								gen_objects() is added to generate objects after monsters
+    
+    + dungeon.h			dungeon()			objects_map[][] is created to store objects on the map.
+    
+    +objects.h			objects()			new objects class now holds all the values needed for objects in one class	
+    +descriptions.cpp		gen_objects()			new method creates objects accounting for rarity and assigns other values to instance from desc file 
+								created objects are placed on the objects_map for later use.
+    
+    + io.cpp			display_io()			the render adds color to objects and monsters and now looks through the char_map and objects_map to place instances on the map 
+
+Day 1:
+    +rlg.327 .cpp		main() 				disabled code from 1.07 to let the game run when executed
+    
+    +descriptions.cpp		print_parser()			changed this method for testing,
+				gen_monsters2()			new method for creating monsters using new values 
+								populated atr of npc class and added instances to char_map[][] until max_monsters is reached
